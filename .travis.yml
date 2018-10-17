@@ -1,7 +1,17 @@
+# Project that we are testing
+
 language: python
+
+# Version of python to test
 python:
-  -"3.6"
+  - "3.5"
+
+# Install dependencies
 install:
-  pip install -r requirements.txt
+  - pip install -r requirements.txt
+# Testing 
 script:
-  pytest
+  - pytest --with-coverage --cover-package=tests  && coverage report
+
+after-success:
+  - coveralls
