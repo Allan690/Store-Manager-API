@@ -1,0 +1,17 @@
+aniso8601==3.0.2
+autoenv==1.0.0
+Click==7.0
+Flask==1.0.2
+Flask-API==1.0
+Flask-RESTful==0.3.6
+itsdangerous==0.24
+Jinja2==2.10
+MarkupSafe==1.0
+Pillow==5.3.0
+PyJWT==1.6.4
+pyparsing==2.2.2
+pytz==2018.5
+six==1.11.0
+svgwrite==1.1.12
+Tree==0.2.4
+Werkzeug==0.14.1
