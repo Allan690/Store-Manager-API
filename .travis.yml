@@ -9,9 +9,10 @@ python:
 # Install dependencies
 install:
   - pip install -r requirements.txt
+  - pip install coveralls
 # Testing 
 script:
-  - pytest --with-coverage --cover-package=tests  && coverage report
+  - nosetests --with-coverage --cover-package=tests && coverage report
 
 after-success:
   - coveralls
